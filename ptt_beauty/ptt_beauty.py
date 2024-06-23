@@ -13,7 +13,6 @@ def download_img(url, save_path):
 
 def main():
     url = "https://www.ptt.cc/bbs/Beauty/M.1686997472.A.FDA.html"
-
     headers = {"Cookie": "over18=1"}
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
@@ -40,7 +39,5 @@ def main():
             print(f"url:{href}")
             download_img(url, f"{dir_name}/{file_name}")
         
-
 if __name__ == "__main__":
     main()
-        
