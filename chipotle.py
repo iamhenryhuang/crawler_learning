@@ -6,7 +6,7 @@ chipo = pd.read_csv('https://raw.githubusercontent.com/Code-Gym/python-dataset/m
 price = [float(value[1:]) for value in chipo.item_price]
 chipo.item_price = price
 
-# calculate item_price average
+# calculate average item_price
 print(round(chipo.item_price.mean()))
 
 # find the data which its item_price is over 7
